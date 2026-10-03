@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  >
+
+  <meta name="theme-color" content="#eee3d2">
+  <meta
+    name="description"
+    content="Una cartita hecha especialmente para Isa ♡"
+  >
+
+  <title>Para Isa.pro ♡</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Decoración -->
+  <div class="ambient ambient-one">✿</div>
+  <div class="ambient ambient-two">❀</div>
+  <div class="ambient ambient-three">✦</div>
+  <div class="ambient ambient-four">✧</div>
+
+  <!-- =========================
+       PORTADA
+  ========================== -->
+  <main id="cover" class="cover-screen">
+
+    <div class="cover-content">
+
+      <p class="small-intro">
+        Hice algo para ti, Isa…
+      </p>
+
+      <div
+        id="envelope"
+        class="envelope-wrapper"
+        role="button"
+        tabindex="0"
+        aria-label="Abrir mi cartita"
+      >
+
+        <div class="envelope">
+
+          <div class="envelope-back"></div>
+
+          <div class="letter-inside">
+            <span>♡</span>
+          </div>
+
+          <div class="envelope-front-left"></div>
+          <div class="envelope-front-right"></div>
+
+          <div class="envelope-flap"></div>
+
+          <div class="wax-seal">
+            ♡
+          </div>
+
+        </div>
+
+      </div>
+
+      <h1>
+        Isa.pro <span>♡</span>
+      </h1>
+
+      <p class="subtitle">
+        Una cartita de tu Coronita
+      </p>
+
+      <button id="openButton" class="open-button">
+        Abrir mi cartita ♡
+      </button>
+
+      <p class="tiny-hint">
+        pss… dale click al sobre ✉
+      </p>
+
+    </div>
+
+  </main>
+
+
+  <!-- =========================
+       CARTA
+  ========================== -->
+  <main id="letterScreen" class="letter-screen">
+
+    <article class="paper">
+
+      <div class="paper-border"></div>
+
+      <header class="letter-header">
+
+        <div class="little-flower">
+          ❀
+        </div>
+
+        <p class="letter-for">
+          Para mi Isa.pro ♡
+        </p>
+
+        <p class="letter-date">
+          Hecho especialmente para ti
+        </p>
+
+      </header>
+
+
+      <!-- Texto generado por JS -->
+      <section
+        id="letterText"
+        class="letter-text"
+        aria-live="polite"
+      ></section>
+
+
+      <div class="letter-controls">
+
+        <button
+          id="skipButton"
+          class="secondary-button"
+        >
+          Mostrar toda la carta
+        </button>
+
+      </div>
+
+
+      <!-- =========================
+           SECRETOS
+      ========================== -->
+      <section class="secrets">
+
+        <div class="separator">
+          <span>✦</span>
+        </div>
+
+        <p class="secret-title">
+          Creo que todavía escondí un par de cositas por aquí… ♡
+        </p>
+
+        <div class="secret-grid">
+
+          <button
+            class="secret-envelope"
+            data-secret="hug"
+          >
+
+            <span class="secret-icon">
+              ✉
+            </span>
+
+            <strong>
+              Un abracito
+            </strong>
+
+            <small>
+              Para cuando lo necesites
+            </small>
+
+          </button>
+
+
+          <button
+            class="secret-envelope"
+            data-secret="exe"
+          >
+
+            <span class="secret-icon">
+              ✉
+            </span>
+
+            <strong>
+              Archivo secreto
+            </strong>
+
+            <small>
+              ISA.EXE
+            </small>
+
+          </button>
+
+        </div>
+
+
+        <div
+          id="secretMessage"
+          class="secret-message"
+          aria-live="polite"
+        ></div>
+
+      </section>
+
+
+      <!-- =========================
+           FIRMA
+      ========================== -->
+      <footer
+        id="signature"
+        class="signature hidden"
+      >
+
+        <p>
+          Con muchísimo cariño,
+        </p>
+
+        <strong>
+          Tu Coronita ♡
+        </strong>
+
+      </footer>
+
+    </article>
+
+  </main>
+
+
+  <!-- =========================
+       REPRODUCTOR
+  ========================== -->
+  <div
+    id="musicPlayer"
+    class="music-player"
+  >
+
+    <button
+      id="musicToggle"
+      class="music-button"
+      aria-label="Pausar música"
+    >
+      ♫
+    </button>
+
+    <div class="music-info">
+
+      <span>
+        Phantom Thread
+      </span>
+
+      <small>
+        GEEK MUSIC
+      </small>
+
+    </div>
+
+    <div
+      id="musicBars"
+      class="music-bars"
+      aria-hidden="true"
+    >
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+    </div>
+
+  </div>
+
+
+  <!-- =========================
+       AUDIO
+  ========================== -->
+  <audio
+    id="music"
+    loop
+    preload="auto"
+  >
+    <source
+      src="assets/phantom-thread.mp3"
+      type="audio/mpeg"
+    >
+  </audio>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
